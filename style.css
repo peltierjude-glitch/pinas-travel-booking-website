@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+  padding: 20px;
+  margin: 10px;
 }
 
 body {
@@ -16,10 +16,7 @@ body {
  .logo img{
   width: 100%;
   height:80px;
-  background-size: cover;
-  background-position: center;
-  text-align: right;
-  color: white;
+  object-fit: cover;
   padding: 0px;
   margin: 0px;
  } 
@@ -70,6 +67,7 @@ section {
 .pinasParagraph {
   background: white;
   text-align: center;
+  font-size: 17px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 #trips {
@@ -166,7 +164,7 @@ section {
 }
 
 label {
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
 }
 
@@ -191,6 +189,7 @@ select {
 .places {
   background: none;
   padding-top: 20px;
+  font-size: 17px;
 }
 
 .places h2, p {
