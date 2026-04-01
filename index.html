@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+  <meta charset="UTF-8">
+  <title> Travel Booking </title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <header>
+    <div class="logo">
+      <img src= "Happyfeet.png" alt= "My websites logo"> 
+    </div>
+    <nav>
+      <a href="index.html"> HOME </a>
+      <a href="#places"> DESTINATIONS </a>
+      <a href="#booking-form"> BOOKING </a>
+      <a href="#"> CONTACT </a>
+      </nav>
+
+     </header>   
+      <main>
+        <div class= "pinas"> 
+        </div>
+         <section class="pinasParagraph">
+          <p>With over 7,000 islands, you have endless choices from white-sand beaches, stunning lakes, breathtaking waterfalls and incredible mountains and volcanoes. </p>
+          </section>
+        
+        <section class="offers">
+          <h3>Offers </h3>
+          <p>Special deals for you!</p>
+          <div class= dealsCarousel>
+            <div class= deals>
+              
+            <div class="discount1">
+              <h5>10% Off</h5>
+              <p>Automatically deducted to group travelers of 5 or more!  </p></div>
+            <div class="discount1">
+              <h5>20% Off</h5>
+              <p> Automatically deducted to group travelers of 10 or more!</p> </div>
+            <div class="discount1">
+              <h5>10% Discount </h5>
+              <p>For our newlyweds! Get our honeymoon promotion.</p> </div>
+              
+          </div>
+          </div>
+        </section>
+        
+        <section class="booking-form" id="booking-form">
+          <h2>Book Your Trip</h2>
+          
+          <form id="bookingForm">
+            <div class= "form-group">
+            <label for="destinations"> Destinations</label>
+            <select id="destinations">
+              <option> Boracay </option>
+              <option> Siargao </option>
+              <option> Palawan </option>
+              <option> Albay </option>
+              <option> Banawe </option>
+            </select>
+            </div>
+            
+            <div class= "form-group">
+            <label for="departure">Departure Date </label>
+            <input type="date" id="departure">
+            </div>
+          
+            <div class= "form-group">
+            <label for="returnDate">Return Date</label>
+            <input type="date" id="returnDate">
+            </div>
+            
+            <div class="form-group">
+            <label for="travelers">Number of Travelers
+            </label>
+            <input type="number" id="travelers">
+            </div>
+            
+            <div class= "form-group">
+           <button type="submit" id="bookNow"> BOOK NOW!</button>
+           </div>
+          </form>
+        
+          <div id = "pricePreview"></div>
+          <div id = "confirmation"></div>
+        </section>
+        
+        <section class="places" id="places">
+          <h2>Our Destinations</h2>
+          <p> Choose from the TOP destination in the Philippines</p>
+          <div class= placesCarousel> 
+             <div class= placesSlides>
+              <div class= tourSlide1>
+                <img src="Boracay1.png">
+             </div>
+             <div class= "tourSlide1">
+               <img src="Siargao1.png">
+             </div>
+             <div class="tourSlide1">
+               <img src="Banawe1.png">
+             </div>
+             <div class="tourSlide1">
+               <img src="Mayon1.png">
+             </div>
+             <div class="tourSlide1">
+               <img src="Palawan1.png">
+             </div>
+             </div>
+          </div>
+          
+        </section>
+      </main>
+      
+      <footer>2026 Happy Feet Travels
+      </footer>
+      
+      <script src="script.js"></script>
+  </body>
+</html>
