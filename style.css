@@ -52,7 +52,7 @@ nav a{
   
 }
 section {
-  padding: 20px;
+  padding: 30px;
   margin: 10px;
 }
 
@@ -228,11 +228,13 @@ select {
 
 .tourSlide1 img{
   width: 100%;
-  height: 520px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+.tourSlide1 {
+  transform: scale(1.05);
 footer{
   background: #E6E0D5;
 }
