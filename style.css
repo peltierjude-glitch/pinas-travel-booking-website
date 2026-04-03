@@ -224,6 +224,7 @@ select {
   scroll-snap-align: start;
   
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .tourSlide1 img{
@@ -233,8 +234,7 @@ select {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.tourSlide1 {
-  transform: scale(1.05);
+
 footer{
   background: #E6E0D5;
 }
