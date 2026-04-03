@@ -11,6 +11,7 @@ body {
   padding: 0px;
   margin: 0px;
   border-radius: 0px;
+  font-size: 16px;
 }
 
  .logo img{
@@ -35,10 +36,6 @@ body {
   z-index: 1000;
 }
 
-h5 {
-  font-size: 15px;
-}
-
 nav {
   background: white;
   padding-top: 1px;
@@ -59,6 +56,11 @@ section {
   margin: 10px;
 }
 
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .pinas {
   background-image: url('cc69c2fe-philippine-tourism.webp');
   width: 100%;
@@ -71,7 +73,6 @@ section {
 .pinasParagraph {
   background: white;
   text-align: center;
-  font-size: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 #trips {
@@ -105,7 +106,7 @@ section {
 
 .discount1 {
   background:white;
-  font-size: 10px;
+  font-size: 14px;
   padding: 30px;
   margin: 10px;
   border-radius: 10px;
@@ -135,14 +136,14 @@ section {
   font-size: 16px;
 }
 
-.destinationCard{
+.destinationCard {
   background: white;
   padding: 10px;
   margin: 0px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.destinationCard img{
+.destinationCard img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -159,7 +160,7 @@ section {
 
 #bookingForm {
   display: grid;
-  gap: 16px;
+  gap: 15px;
 }
 
 .form-group {
@@ -170,12 +171,14 @@ section {
 
 label {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
+  color: #333;
 }
 
 input, 
 select {
-  padding: 10px;
+  padding: 12px;
+  font-size: 14px;
   border-radius: 8px;
   border: 1px solid #ccc;
   
@@ -199,7 +202,7 @@ select {
 
 .places h2,
 .places p {
-  margin-left:15px;
+  margin-left: 15px;
 }
 
 .placesCarousel {
