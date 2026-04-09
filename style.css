@@ -9,9 +9,10 @@ body {
   font-family: Arial, sans-serif;
   color: black;
   padding: 0px;
-  margin: 0px;
+  margin: auto;
   border-radius: 0px;
   font-size: 16px;
+  max-width: 500px;
 }
 
  .logo img{
@@ -36,6 +37,11 @@ body {
   z-index: 1000;
 }
 
+h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
 nav {
   background: white;
   padding-top: 1px;
@@ -49,11 +55,12 @@ nav {
 nav a{
   color: black;
   text-decoration-line: none;
-  
+  font-size: 14px;
 }
+
 section {
-  padding: 30px;
-  margin: 10px;
+  padding: 25px 15px;
+  margin: 0px;
 }
 
 p {
@@ -64,10 +71,26 @@ p {
 .pinas {
   background-image: url('cc69c2fe-philippine-tourism.webp');
   width: 100%;
-  height: 450px;
+  height: 350px;
   background-size: cover;
   background-position: center;
   color: white;
+  position: relative;
+}
+
+.pinas h1 {
+  position: absolute;
+  color: white;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px
+}
+
+.pinas::after {
+  content:"";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
 }
 
 .pinasParagraph {
@@ -116,7 +139,12 @@ p {
   scroll-snap-align: start;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   
+  transition: 0.3s;
   cursor:pointer;
+}
+
+.discount1:hover {
+  transform: translateY(-5px);
 }
 
 .summary-card {
@@ -154,7 +182,7 @@ p {
   background: white;
   padding: 20px;
   margin: 15px;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -186,7 +214,9 @@ select {
 
 #bookNow {
   background: #E6E0D5;
-  padding: 10px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
   border-radius: 8px;
 }
 
