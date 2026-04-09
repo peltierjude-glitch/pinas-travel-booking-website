@@ -68,6 +68,10 @@ p {
   line-height: 1.5;
 }
 
+img {
+  border-radius: 10px;
+}
+
 .pinas {
   background-image: url('cc69c2fe-philippine-tourism.webp');
   width: 100%;
@@ -84,6 +88,7 @@ p {
   bottom: 20px;
   left: 20px;
   font-size: 24px
+  z-index: 2;
 }
 
 .pinas::after {
@@ -91,13 +96,19 @@ p {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.3);
+  z-index: 1;
 }
 
 .pinasParagraph {
   background: white;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 12px
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);*/
+} 
+
 #trips {
   background: white;
   font-size: 10px;
@@ -115,6 +126,12 @@ p {
   gap: 15px;
 }
 
+.offers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .dealsCarousel {
  overflow-x: auto;
  scroll-snap-type: x mandatory;
@@ -130,12 +147,12 @@ p {
 .discount1 {
   background:white;
   font-size: 14px;
-  padding: 30px;
+  padding: 20px;
   margin: 10px;
   border-radius: 10px;
   min-height: 100px;
   
-  flex: 0 0 80%;
+  flex: 0 0 90%;
   scroll-snap-align: start;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   
@@ -168,7 +185,9 @@ p {
   background: white;
   padding: 10px;
   margin: 0px;
+  border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
 .destinationCard img {
@@ -176,12 +195,17 @@ p {
   height: 200px;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.destinationCard:hover img {
+  transition: scale (1.05);
 }
 
 .booking-form{
   background: white;
   padding: 20px;
-  margin: 15px;
+  margin: 20px 15px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -208,8 +232,7 @@ select {
   padding: 12px;
   font-size: 14px;
   border-radius: 8px;
-  border: 1px solid #ccc;
-  
+  border: 1px solid #ccc;  
 }
 
 #bookNow {
@@ -254,7 +277,7 @@ select {
   scroll-snap-align: start;
   
   cursor: pointer;
-  transform: scale(1.05);
+  transform: none;
 }
 
 .tourSlide1 img{
