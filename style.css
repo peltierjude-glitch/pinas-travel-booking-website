@@ -1,6 +1,7 @@
-@media (max-width: 480px){
 
-* {
+*,
+*::before,
+*::after{
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
@@ -9,12 +10,13 @@
 body {
   background: #F2F3F4;
   font-family: Arial, sans-serif;
-  color: black;
-  padding: 0 10px;
-  margin: auto;
-  border-radius: 0px;
-  font-size: clamp(14px, 2.5vw, 16px);
+
   max-width: 600px;
+  padding: 0 12px;
+  margin: 0 auto;
+  color: #111;
+  line-height: 1.5;
+  
 }
 
  .logo img{
@@ -297,4 +299,4 @@ footer{
   background: #E6E0D5;
 }
 
-}
+
